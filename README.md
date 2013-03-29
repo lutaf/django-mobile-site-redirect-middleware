@@ -24,9 +24,9 @@ django middlewares,include SubdomainMiddleware,MobileRedirectMiddleware
 
 - 修改settings.py,加入url配置项
 <pre>
-	SUBDOMAIN\_URLCONFS = {
-  		None: 'lutaf.urls\_r',  # no subdomain, e.g. ``example.com``
-    	'm': 'lutaf.urls\_m',
+	SUBDOMAIN_URLCONFS = {
+  		None: 'lutaf.urls_r',  # no subdomain, e.g. ``example.com``
+    	'm': 'lutaf.urls_m',
 		#....
 	}
 </pre>
@@ -41,14 +41,14 @@ django middlewares,include SubdomainMiddleware,MobileRedirectMiddleware
 <pre>
 	SITE_INFO= {
 	    'domain':'lutaf.com',
-	    'mobile\_host':'m.lutaf.com',
+	    'mobile_host':'m.lutaf.com',
 	}
 </pre>
 	注意： domain 是指域名本身，不是主站使用的host，如果主站启用www,也可以正常使用
 
 - 移动浏览器 user agent 列表如下，可以随意修改
 <pre>
-	DEFAULT\_UA\_STRINGS = (
+	DEFAULT_UA_STRINGS = (
 	    'Android',
 	    'BlackBerry',
 	    'IEMobile',
